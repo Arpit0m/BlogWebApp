@@ -8,7 +8,7 @@
  <%   posts.forEach(function(post){ %>
     <h1><%= post.post_title %></h1>
     <p><%= post.post_text.substr(0,101)+"..." %> 
-        <a href="/posts/<%= post.post_title %>">Read more</a>
+        <a href="/posts/<%= post._id %>">Read more</a>
     </p>
   <% }) ;%>
 
